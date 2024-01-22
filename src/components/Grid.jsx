@@ -1,13 +1,17 @@
 import ItemColor from "./ItemColor";
 
-const Grid = () => {
+const Grid = ({ colorArray, dltColor }) => {
   return (
     <section className="py-5">
       <div className="row justify-content-evenly gap-5">
-        <ItemColor />
-        <ItemColor />
-        <ItemColor />
-        <ItemColor />
+      {colorArray && colorArray.map((color, position) => (
+          <ItemColor
+            key={position}
+            index={position}
+            color={color}
+            dltColor={dltColor}
+          />
+        ))}
       </div>
     </section>
   );

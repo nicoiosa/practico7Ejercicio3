@@ -1,9 +1,9 @@
 import { Button } from "react-bootstrap";
 
-const ItemColor = () => {
+const ItemColor = ({ index, color, dltColor }) => {
   return (
     <div className="p-4 border col-3">
-      <p className="lead">Nombre Color</p>
+      <p className="lead">{color}</p>
       <div
         className="py-4 px-lg-4 px-2 mb-4 border-top border-bottom d-flex flex-column flex-sm-row align-items-center
     "
@@ -11,12 +11,14 @@ const ItemColor = () => {
       >
         <div
           className="mb-2 mb-sm-0"
-          style={{ backgroundColor: "red", height: 100, width: 100 }}
+          style={{ backgroundColor: color, height: 100, width: 100 }}
         ></div>
         <div className="d-flex flex-grow-1 justify-content-center align-items-center"></div>
       </div>
       <div className="d-flex flex-row-reverse">
-        <Button className="btn-danger">Borrar</Button>
+        <Button onClick={() => dltColor(index)} className="btn-danger">
+          Borrar
+        </Button>
       </div>
     </div>
   );
