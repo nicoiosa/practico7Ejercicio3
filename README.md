@@ -18,11 +18,11 @@ To get started with the Rolling Task List on your local machine, follow these st
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nicoiosa/practico7Ejercicio1.git
+   git clone https://github.com/nicoiosa/practico7Ejercicio3.git
    
 2. Navigate to the project directory:
    ```bash
-   cd practico7Ejercicio1
+   cd practico7Ejercicio3
    
 3. Install dependencies:
    ```bash
