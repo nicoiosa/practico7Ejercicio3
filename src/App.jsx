@@ -7,8 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <Container className="my-5">
+      <h1 className="mb-4 text-center">Rolling Color Finder</h1>
       <FormColor />
-      <Grid />
     </Container>
   );
 }
