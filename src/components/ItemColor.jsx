@@ -38,7 +38,7 @@ const ItemColor = ({ color, setColors }) => {
     });
   };
   return (
-    <div className="p-4 border col-3">
+    <div className="p-4 border col-sm-5 col-lg-3">
       <p className="lead">{color.color}</p>
       <div
         className="py-4 px-lg-4 px-2 mb-4 border-top border-bottom d-flex flex-column flex-sm-row align-items-center"

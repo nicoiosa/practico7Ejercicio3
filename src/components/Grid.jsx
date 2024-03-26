@@ -24,7 +24,7 @@ const Grid = ({ reload }) => {
     }
   };
   return (
-    <section className="py-5">
+    <section className="py-5 px-4 px-sm-0">
       {error && <Alert variant="danger">{error}</Alert>}
       {!error && (
         <div className="row justify-content-evenly gap-5">
